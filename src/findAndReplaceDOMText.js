@@ -175,6 +175,11 @@
 
 		this.matches = this.search();
 
+		this.foundTexts = [];
+		for (var i = this.matches.length; i--;) {
+			this.foundTexts.push(this.matches[i][0]);
+		}
+
 		if (this.matches.length) {
 			this.processMatches();
 		}
